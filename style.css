@@ -33,7 +33,7 @@ main {
 }
 main>.phrase>p{
     text-align:center;
-    padding-top:30%;
+    padding-top:40%;
 }
 main>.choix2{
     background-color:var(--amethyst);
@@ -47,6 +47,6 @@ main>.choix1{
     display:flex;
     justify-content: center;
     padding:5%;
-    margin:20% 15% 0% 15%;
+    margin:30% 15% 0% 15%;
     justify-content: space-evenly;
 }
