@@ -38,12 +38,21 @@ main>.phrase>p{
     text-align:center;
     padding-top:40%;
 }
+.phrase{
+    margin-left:15%;
+    margin-right:15%;
+}
+main>.phrase>p{
+    text-align:center;
+    padding-top:40%;
+}
 main>.choix2{
     background-color:var(--amethyst);
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
     margin:0% 15% 0% 15%;
+    padding:2%;
 }
 main>.choix1{
     background-color:var(--french-violet);
@@ -52,4 +61,35 @@ main>.choix1{
     padding:5%;
     margin:30% 15% 0% 15%;
     justify-content: space-evenly;
+}
+.login-container {
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.login-container input[type=text], .login-container input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:10px;
+}
+.login-container button {
+    background-color: var(--ut-orange);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius:10px;
+}
+.login-container button:hover{
+    background-color: var(--pumpkin);
 }
