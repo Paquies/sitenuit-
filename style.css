@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 html {
     --pumpkin: #ff6d00ff;			
     --safety-orange: #ff7900ff;
@@ -15,6 +17,8 @@ html {
     margin: 0;
     padding: 0;
     font-size:1.05em;
+    font-family:'Roboto', sans-serif;
+    font-;
 }
 
 body {
