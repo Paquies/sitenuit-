@@ -18,11 +18,11 @@ html {
 }
 
 body {
-    background-color: red;
+    background-color: var(--persian-indigo);
 }
 
 main {
-    background-color: green;
+    background-color: var(--orange-peel);
     margin: auto;
     max-width: 500px;
     height: 100vh;
@@ -36,14 +36,14 @@ main>.phrase>p{
     padding-top:30%;
 }
 main>.choix2{
-    background-color:purple;
+    background-color:var(--amethyst);
     display:flex;
     justify-content: center;
     justify-content: space-evenly;
     margin:0% 15% 0% 15%;
 }
 main>.choix1{
-    background-color:yellow;
+    background-color:var(--french-violet);
     display:flex;
     justify-content: center;
     padding:5%;
