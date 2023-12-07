@@ -22,10 +22,10 @@ html {
 
 body {
     background-color: var(--persian-indigo);
+    background: linear-gradient(0deg,var(--persian-indigo), var(--tekhelet));
 }
 
 main {
-    background-color: var(--orange-peel);
     margin: auto;
     max-width: 500px;
     height: 100vh;
@@ -34,7 +34,7 @@ main {
     margin-left:15%;
     margin-right:15%;
 }
-main>.phrase>p{
+.card>.phrase>p{
     text-align:center;
     padding-top:40%;
 }
@@ -42,11 +42,11 @@ main>.phrase>p{
     margin-left:15%;
     margin-right:15%;
 }
-main>.phrase>p{
+.card .phrase>p{
     text-align:center;
     padding-top:40%;
 }
-main>.choix2{
+.card>.choix2{
     background-color:var(--amethyst);
     display:flex;
     justify-content: center;
@@ -54,7 +54,7 @@ main>.choix2{
     margin:0% 15% 0% 15%;
     padding:2%;
 }
-main>.choix1{
+.card>.choix1{
     background-color:var(--french-violet);
     display:flex;
     justify-content: center;
@@ -94,4 +94,62 @@ main>.choix1{
 }
 .login-container button:hover{
     background-color: var(--pumpkin);
+}
+
+
+
+
+#swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    width: 90vw;
+    max-width: 500px;
+    height: 80vh;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    position: absolute;
+}
+.card.active {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.left-btn {
+    background-color: #FF6B6B;
+    color: white;
+}
+
+.right-btn {
+    background-color: #6BFF6B;
+    color: white;
 }
