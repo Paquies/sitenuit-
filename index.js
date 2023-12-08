@@ -8,15 +8,19 @@ window.onload = function() {
             
             var nom = document.getElementById("nom").value;
             var mdp = document.getElementById("mdp").value;
-            
-            var users = JSON.parse(localStorage.getItem('users')) || [];
-            
-            users.push({nom: nom, mdp: mdp});
-            
-            localStorage.setItem('users', JSON.stringify(users));
-            
-            alert("Inscription réussie !");
-            window.location.href="login.html";
+
+            if(!nom.endsWith("@nuit-info.tlse") || nom.indexOf('@') < 5 || mdp.length < 6) {
+                alert("L'email doit avoir au moins 5 caractères avant le '@' et le mot de passe doit avoir au moins 6 caractères. Veuillez réessayer.");
+            } else {
+                var users = JSON.parse(localStorage.getItem('users')) || [];
+                
+                users.push({nom: nom, mdp: mdp});
+                
+                localStorage.setItem('users', JSON.stringify(users));
+                
+                alert("Inscription réussie !");
+                window.location.href="login.html";
+            }
         });
     }
 
