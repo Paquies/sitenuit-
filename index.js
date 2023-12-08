@@ -10,7 +10,7 @@ window.onload = function() {
             var mdp = document.getElementById("mdp").value;
 
             if(!nom.endsWith("@nuit-info.tlse") || nom.indexOf('@') < 5 || mdp.length < 6) {
-                alert("L'email doit avoir au moins 5 caractères avant le '@' et le mot de passe doit avoir au moins 6 caractères. Veuillez réessayer.");
+                alert("L'email doit avoir au moins 5 caractères avant le '@nuit-info.tlse' et le mot de passe doit avoir au moins 6 caractères. Veuillez réessayer.");
             } else {
                 var users = JSON.parse(localStorage.getItem('users')) || [];
                 
